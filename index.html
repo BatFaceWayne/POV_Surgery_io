@@ -135,11 +135,11 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/shot_thumbnail.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+   Placeholder.
       </h2>
     </div>
   </div>
@@ -154,7 +154,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+          The surgical usage of Mixed Reality (MR) has received growing attention in areas such as surgical navigation systems, skill assessment, and robot-assisted surgeries. For such applications, pose estimation for hand and surgical instruments from an egocentric perspective is a fundamental task and has been studied extensively in the computer vision field in recent years. However, the development of this field has been impeded by a lack of datasets, especially in the surgical field, where bloody gloves and reflective metallic tools make it hard to obtain 3D pose annotations for hands and objects using conventional methods. To address this issue, we propose POV-Surgery, a large-scale, synthetic, egocentric dataset focusing on pose estimation for hands with different surgical gloves and three orthopedic surgical instruments, namely scalpel, friem, and diskplacer. Our dataset consists of 53 sequences and 88,329 frames, featuring high-resolution RGB-D video streams with activity annotations, accurate 3D and 2D annotations for hand-object pose, and 2D hand-object segmentation masks. We fine-tune the current SOTA methods on POV-Surgery and further show the generalizability when applying to real-life cases with surgical gloves and tools by extensive evaluations. The code and the dataset will be publicly available for research purposes.
           </p>
         </div>
       </div>
@@ -171,30 +171,45 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/pipeline.pdf" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          The proposed pipeline to generate synthetic data sequences. (a) shows the multi-stereo-cameras-based body motion capture module. (b) shows the optimization- based hand-object manipulation sequence generation pipeline. (c) shows the fused hand-body pose and the egocentric camera pose calculation module. (d) shows the rendering module with which RGB-D sequences are rendered with diverse textures.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/posegenv2.pdf" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          The Hand manipulation sequence generation pipeline consists of three components: grasp pose generation, pose selection, and pose refinement, highlighted in blue, red, and green, respectively.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/statistics.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         (a) Dataset samples for RGB-D sequences and annotation. An example of the scalpel, friem, and diskplacer, is shown in the first three rows. The fourth row shows an example of the new scene and blood glove patterns that only appear in the test set. (b) shows the statistics on the number of frames for each surgical instrument in the training and testing sets. (c) shows a point cloud created from an RGB-D frame with simulated Kinect noise.
+         
+       </h2>
+            </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/quali.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Qualitative results of METRO, SEMI, and HANDOCCNET on the test of of POV-Surgery. The FT denotes fine-tuning. We show the 2D re-projection of the predicted 3D hand joints and object control bounding box overlayed on the input image.         
+       </h2>
+             </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/quanti.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         The evaluation result of different methods on the test set of POV-Surgery, where the ft denotes fine-tuned on the training set. P2d denotes the 2D hand joint re-projection error (in pixels). MPJPE and PVE denote the 3D mean per joint error and per hand vertex error, respectively. PA denotes procrustes alignment.         
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/real.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        (a) Ground truth and qualitative results of different methods on the real-life test set. (b) Accuracy with different 2D pixel error thresholds, showing large performance improvement after fine-tuning on POV-Surgery (c) Our multi-camera real-life data capturing set-up.
       </h2>
     </div>
   </div>
@@ -271,7 +286,7 @@
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/poster_placer_holder.pdf" width="100%" height="550">
           </iframe>
         
       </div>
